@@ -1,0 +1,8 @@
+*
+!Dockerfile
+!requirements.txt
+!infer.py
+!LICENSE
+!NOTICE
+!examples/
+!examples/**

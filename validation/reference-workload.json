@@ -1,0 +1,9 @@
+{
+  "id": "oro-reference-35903201566-1",
+  "state": "completed",
+  "image": "pytorch/pytorch:2.6.0-cuda12.4-cudnn9-runtime",
+  "imageDigest": "sha256:77f17f843507062875ce8be2a6f76aa6aa3df7f9ef1e31d9d7432f4b0f563dee",
+  "completedAt": 1790190278744,
+  "cleanedAt": 1790190375127,
+  "workflow_run": "https://github.com/anycloud-sh/anycloud/actions/runs/35903201566"
+}

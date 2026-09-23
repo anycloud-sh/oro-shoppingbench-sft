@@ -1,0 +1,31 @@
+ORO ShoppingBench SFT on AnyCloud
+
+The model is owned and released by ORO AI. This independent artifact packages
+its public merged checkpoint for finite, AnyCloud-powered GPU inference.
+It is not an official ORO image. Weights download from the pinned creator-owned
+Hugging Face release at runtime and are not included in the container.
+
+Model: https://huggingface.co/oro-ai/qwen3-4b-shoppingbench-sft
+Revision: 2fbf90fc867bb7768a9e034fb8680a830a1d6373
+Base: Qwen/Qwen3-4B. Model card license: Apache-2.0.
+Upstream code: https://github.com/ORO-AI/shoppingbench-trajectory-primitive
+Revision: d2dd7d0b70e8fe4494787398795502b54757ee73. License: Apache-2.0.
+
+The example inputs are adapted from the public evaluation corpus by retaining
+the conversation prefix before the first assistant turn and the original tool
+schemas. No target assistant answer or later tool response is supplied to the
+model. Row indices, source-row hashes, and prefix boundaries accompany examples.
+Dataset: oro-ai/sn15-shoppingbench-sft-15k
+Revision: ca63926329b53af58b5122fab5bc24d156aa9ea7
+https://huggingface.co/datasets/oro-ai/sn15-shoppingbench-sft-15k
+Dataset license: Creative Commons Attribution 4.0 International (CC BY 4.0).
+https://creativecommons.org/licenses/by/4.0/legalcode
+
+Citation: Shardul Bansal, Seth Schilbe, Jarrod Barnes (2026),
+“Bittensor Agent Arenas as a Trajectory Primitive: Distilling a Shopping Agent
+from ShoppingBench Subnet Traces.” https://arxiv.org/abs/2606.10064
+
+The wrapper and validation tooling are Apache-2.0 licensed. This wrapper adds
+batch input/output and tool-schema validation around the creator's public
+Transformers model-loading and generation path. Tool calls are recorded, not
+executed. Schema validity is not shopping-task correctness or benchmark ASR.

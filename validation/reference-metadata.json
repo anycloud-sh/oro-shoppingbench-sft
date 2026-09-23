@@ -1,0 +1,21 @@
+{
+  "model": "oro-ai/qwen3-4b-shoppingbench-sft",
+  "model_revision": "2fbf90fc867bb7768a9e034fb8680a830a1d6373",
+  "dataset_revision": "ca63926329b53af58b5122fab5bc24d156aa9ea7",
+  "source_revision": "d2dd7d0b70e8fe4494787398795502b54757ee73",
+  "inputs_sha256": "4e23515ac7ea37d194345e3d409e3ef3490c12d79adba757af106347cce049c0",
+  "torch": "2.6.0+cu124",
+  "transformers": "4.53.1",
+  "cuda": "12.4",
+  "gpu": "NVIDIA A10",
+  "cuda_matrix_check": "passed",
+  "all_parameters_on_cuda": true,
+  "model_load_seconds": 24.696,
+  "total_seconds": 40.882,
+  "peak_allocated_bytes": 8816819200,
+  "generation": {
+    "max_new_tokens": 512,
+    "do_sample": false,
+    "seed": 42
+  }
+}
