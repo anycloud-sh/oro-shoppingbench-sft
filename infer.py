@@ -66,7 +66,7 @@ def read_inputs(path):
                 message["content"], str
             ):
                 raise ValueError(f"{identifier}: message content must be text or null")
-        if messages[-1]["role"] == "assistant":
+        if messages[-1]["role"] not in {"user", "tool"}:
             raise ValueError(
                 f"{identifier}: prefix must end before the target assistant turn"
             )
@@ -199,7 +199,16 @@ def run(args):
         "model": MODEL,
         "model_revision": MODEL_REVISION,
         "source_revision": SOURCE_REVISION,
-        "dataset_revision": DATASET_REVISION,
+        "dataset_revision": (
+            DATASET_REVISION
+            if all(
+                row.get("source", {}).get("dataset")
+                == "oro-ai/sn15-shoppingbench-sft-15k"
+                and row["source"].get("revision") == DATASET_REVISION
+                for row in rows
+            )
+            else None
+        ),
         "inputs_sha256": hashlib.sha256(raw_inputs).hexdigest(),
         "input_count": len(rows),
         "valid_tool_call_rows": successful,

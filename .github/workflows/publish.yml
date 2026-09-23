@@ -14,6 +14,9 @@ on:
 permissions:
   contents: read
   packages: write
+concurrency:
+  group: build-candidate
+  cancel-in-progress: true
 jobs:
   build:
     runs-on: ubuntu-latest
