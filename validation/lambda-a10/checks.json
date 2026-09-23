@@ -1,0 +1,12 @@
+{
+  "default": {
+    "rows": 3,
+    "token_parity": "exact",
+    "persisted_after_cleanup": true
+  },
+  "custom": {
+    "rows": 1,
+    "token_parity": "exact",
+    "persisted_after_cleanup": true
+  }
+}

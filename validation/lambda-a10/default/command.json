@@ -1,0 +1,19 @@
+[
+  "anycloud",
+  "job",
+  "ghcr.io/anycloud-sh/oro-shoppingbench-sft@sha256:fe0609eead68e26d567543bfad135324eebfcb8607f5bee4f859fae5a57075d3",
+  "--id",
+  "oro-default-3f42af798757",
+  "--credentials",
+  "lambda",
+  "--gpu-type",
+  "a10",
+  "--gpus",
+  "all",
+  "--output-bucket",
+  "anycloud-oro-default-3f42af798757",
+  "--output-storage-credentials",
+  "artifact-storage",
+  "--output-storage-region",
+  "us-east-1"
+]

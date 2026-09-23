@@ -1,0 +1,8 @@
+{
+  "image": "ghcr.io/anycloud-sh/oro-shoppingbench-sft@sha256:fe0609eead68e26d567543bfad135324eebfcb8607f5bee4f859fae5a57075d3",
+  "artifact_revision": "923a6973f339e93c498c4426f6c480a4c607f99f",
+  "anonymous_pull": true,
+  "repository_linked": true,
+  "repository": "https://github.com/anycloud-sh/oro-shoppingbench-sft",
+  "platform": "linux/amd64"
+}

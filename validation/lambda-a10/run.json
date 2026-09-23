@@ -1,0 +1,11 @@
+{
+  "provider": "Lambda",
+  "validated_at": "2026-09-23",
+  "workflow_url": "https://github.com/anycloud-sh/anycloud/actions/runs/35908226319",
+  "workflow_source_revision": "75e9b355296077e033eeb4c47eb2c5ca2f51ac58",
+  "conclusion": "success",
+  "image": "ghcr.io/anycloud-sh/oro-shoppingbench-sft@sha256:fe0609eead68e26d567543bfad135324eebfcb8607f5bee4f859fae5a57075d3",
+  "artifact_revision": "923a6973f339e93c498c4426f6c480a4c607f99f",
+  "compute_cleanup": "confirmed in both workload records",
+  "validation_buckets": "deleted after output download by run_lambda.py; workflow cleanup also passed"
+}

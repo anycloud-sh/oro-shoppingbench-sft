@@ -1,0 +1,8 @@
+{
+  "id": "oro-custom-3f42af798757",
+  "state": "completed",
+  "image": "ghcr.io/anycloud-sh/oro-shoppingbench-sft@sha256:fe0609eead68e26d567543bfad135324eebfcb8607f5bee4f859fae5a57075d3",
+  "imageDigest": "sha256:fe0609eead68e26d567543bfad135324eebfcb8607f5bee4f859fae5a57075d3",
+  "completedAt": 1790191867939,
+  "cleanedAt": 1790191964985
+}
